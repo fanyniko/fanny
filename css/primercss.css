@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document 
+contenido: #F35DFF
+encabezado: #A0FFE4
+equivalentes: #A05DE4
+piepagina: #F35DE4
+auxiliar: #F35D81
+*/
+/*no se le suele poner bordes a las cajas*/
+/*padding: da margenes internoa*/
+*{
+	margin:0;    
+}
+
+/*etiquetas/ de aqui para abajo*/
+body{
+	background-image:url(../imagen/fondo/rosa.jpg);
+	background-repeat:no-repeat;/*con la letra "X"la imagen se repite hacia los lados o cuando es en caso de "Y" esta se repite hacia abajo"*/
+
+	background-size:100%;/*con esto la imagen se pone al 100% de toda la caja*/
+	background-attachment:fixed;/*con esto la imagen se acomoda en toda la pantalla/el fondo*/
+}
+	
+h1{
+	font-size:2em;
+	text-align:center;
+	letter-spacing:5px;
+	line-height:2em;
+	color:#FF0 !important;
+	/*border:2px groove #f60;*/
+	/*margin:0 4em;*/
+	border-bottom:5px solid #f00;
+	/*border-top:5px double #999999;
+	border-right:5px dotted #00f;
+	border-left:5px groove #F6F;*/
+	background-image:url(../imagen/fondo/fondo2.jpg);
+	background-repeat:no-repeat;/*con la letra "X"la imagen se repite hacia los lados o cuando es en caso de "Y" esta se repite hacia abajo"*/
+	background-position:center;/*con esto la imagen se a comoda centrada*/
+	background-size:100%;/*con esto la imagen se pone al 100% de toda la caja*/
+}
+h2{
+	font-size:2em;
+	text-align:right;
+	letter-spacing:5px;
+	line-height:2em;
+	}
+a{
+	text-decoration:none;
+	/*no lleva subrayado el link*/
+	}
+a:link{
+	color:#FFF;
+	/*color del link*/
+	}
+a:visited{
+	color:#0F3;
+	/*color del link cuando ya lo han visitado*/
+	}
+a:hover{
+		color:#FF3;
+		text-decoration:underline;
+		/*el link cambia de color cuando ponemos el cursor sbre el link y una linea de bajo*/
+		}
+a:active{
+		color:#999;
+		background-color:#0FF;
+		/*al momento de poner el cursor sobre el link su fondo/background cambia de color asi como la letra*/
+		}
+p{
+		/*margin:1em;
+		margin-left:2em;
+		margin-right:3em;
+		margin-bottom:1em;*/ /*espacio abajo*/
+		/*border:5px dashed #ccc; */ /*esto da un punteado al rededor / linea que cubre la caja ejemplos:solid,dotted,double*/
+		padding:1em 0; /*da espacio de las letras al border*/
+	background-image:url(../imagen/fondo/parafondo.jpg);
+	}
+img{
+		border:5px solid #3F3;
+		padding:10px;
+	}
+		
+		/*identificadores/ "#"*/
+#wrapper{
+	/*width:70%;/*se centra por completo el contenedor/ pero no se fija, al momento de reducir la pantalla las imagenes se desacomodan*/
+	width:700px;/*con este codigo al mover la pantalla todo se queda fijo*/
+	margin:0 auto;
+	background-color:#fff;
+	border:5px solid #0FF;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+#encabezado{
+	/*border:1px solid #ff9;
+	color: #FC6;
+	font-family:Arial, Helvetica, sans-serif;*/
+	background-color:white;
+	padding:20px;
+	padding-bottom:0;
+	
+	}
+#menu li{
+		display:inline;
+		list-style-type:none;
+		margin:0;
+		border:2px solid#999;
+		background-color:#06C;
+	}
+#menu a:hover, #diosas #op3 a{
+	text-decoration:none;
+	color:#0FF;	
+	background-color:pink;
+	border-bottom:none;
+	/*padding:4px 8px 4px 8px;
+	border:2px solid#999;/*esto le da un borde punteado cuando se le da click al link*/
+}
+	/*#menu a:hover{
+		background:#F3C;
+		color:#3F6;
+		border-bottom:thin;}*/	
+
+#menu a{
+	color:#9CC;
+	background-color:#633;
+	padding: 4px/*se alarga hacia arriba*/ 8px/*derecha/ se alarga hacia la derecha*/4px/*se alarga hacia abajo*/ 8px/*se alarga haciala izquierda*/;
+	border:1px thick #0CF;
+}
+	
+
+#menu{
+	text-align:center;
+	padding:5px 10px 4px 10px;
+	border-bottom:#60F;
+	color:#39F;
+		/*margin-top:10px;*/
+		/*margin-left:205px; /*MARGEN IZQUIERO/ EL BORDE,*/
+		/*margin-bottom:0;*/
+		/*padding:0;*/
+		
+	}
+#articulo{
+	background-color:#fff;
+		border:3px solid #3F3;
+	color:#FF0;
+	font-family:Arial, Helvetica, sans-serif;
+	height:300px;/*esto le da una altura a todo el contenedor de 300px*/
+	}
+#equivalentes{
+	border:1px solid #ff9;
+	color: #39F;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:20px;
+	padding-bottom:0;
+	background-color:#999;
+	
+	}
+#piepagina{
+	border:1px solid #ff9;
+	color: #39F;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:20px;
+	padding-bottom:0;
+	background-color:#C9C;
+	
+	}
+	/*reglas anidadas/esto sirve para que lo seleccionado tenga diferencia y sea unica a las demas/*/
+#piepagina a{
+		color:#6F0;
+		text-decoration:underline;
+	}
+	ol li{list-style:armenian}
+	ol ul li{list-style:disc}
+	
+	/*clases/son las que tienen punto.*/
+	#centro{
+	width:300px;
+	margin:5px/*hacia arriba y hacia a bajo*/auto;/*que lo haga de forma automatica*/
+	
+	}
+.resaltar{
+		background-color:#F90;
+		color:#FFF;
+		/*text-decoration:underline;*/
+		font-style:italic;
+	}
+	/*esto sirve para resaltar alguna palabra o texto*/
+.izq{
+		float:left;
+		padding:3px;/*espacio que da hacia afuera*/
+		margin-left:10px;
+		margin-bottom:10px;/*margen parte inferior*/
+	}
+.der{
+	float:right;
+	padding:3px;
+	margin-right:10px;/*esto da un margen derecho*/
+	margin-bottom:10px;
+}
+	#validador{
+	display:none;
+	}/*esto quita la imagen*/
+	
+	

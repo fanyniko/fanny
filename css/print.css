@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document 
+contenido: #F35DFF
+encabezado: #A0FFE4
+equivalentes: #A05DE4
+piepagina: #F35DE4
+auxiliar: #F35D81
+*/
+/*no se le suele poner bordes a las cajas*/
+/*padding: da margenes internoa*/
+*{
+	margin:0;    
+}
+
+/*etiquetas/ de aqui para abajo*/
+body{
+
+}
+	
+h1{
+	font-size:2em;
+	text-align:center;
+	letter-spacing:5px;
+	line-height:2em;
+	color:black !important;
+	/*border:2px groove #f60;*/
+	/*margin:0 4em;*/
+	border-bottom:5px solid #F00;
+	/*border-top:5px double #999999;
+	border-right:5px dotted #00f;
+	border-left:5px groove #F6F;*/
+}
+h2{
+	font-size:2em;
+	text-align:right;
+	letter-spacing:5px;
+	line-height:2em;
+	}
+a{
+	text-decoration:none;
+	/*no lleva subrayado el link*/
+	}
+a:link{
+	color:none;
+	/*color del link*/
+	}
+a:visited{
+	color:black;
+	/*color del link cuando ya lo han visitado*/
+	}
+a:hover{
+		color:black;
+		text-decoration:underline;
+		/*el link cambia de color cuando ponemos el cursor sbre el link y una linea de bajo*/
+		}
+a:active{
+		color:none;
+		background-color:none;
+		/*al momento de poner el cursor sobre el link su fondo/background cambia de color asi como la letra*/
+		}
+p{
+		/*margin:1em;
+		margin-left:2em;
+		margin-right:3em;
+		margin-bottom:1em;*/ /*espacio abajo*/
+		/*border:5px dashed #ccc; */ /*esto da un punteado al rededor / linea que cubre la caja ejemplos:solid,dotted,double*/
+		padding:1em 0; /*da espacio de las letras al border*/
+	background-image:white;
+	}
+img{
+		border:5px solid black;
+		
+	}
+		
+		/*identificadores/ "#"*/
+#wrapper{
+	/*width:70%;/*se centra por completo el contenedor/ pero no se fija, al momento de reducir la pantalla las imagenes se desacomodan*/
+	width:800px;/*con este codigo al mover la pantalla todo se queda fijo*/
+	margin:0 auto;
+	background-color:white;
+	border:none;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+#encabezado{
+	background-color:white;
+	padding:20px;
+	padding-bottom:0;
+	/*border:1px solid #ff9;
+	color: #FC6;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:20px;
+	padding-bottom:0;
+	*/
+	}
+#menu li{
+		display:inline;
+		list-style-type:none;
+		margin:0;
+		border:none;
+		background-color:white;
+	}
+	#menu a:hover, #diosas #op3 a{
+		text-decoration:none;
+	color:black;	
+	background-color:white;
+	border-bottom:none;
+	/*padding:4px 8px 4px 8px;
+	border:2px solid#999;/*esto le da un borde punteado cuando se le da click al link*/
+	}
+	/*#menu a:hover{
+		background:#F3C;
+		color:#3F6;
+		border-bottom:thin;}*/	
+#menu{
+	display:none;
+	
+	}
+#articulo{
+	background-color:white;
+	border:none;
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+#equivalentes {
+	border:none;
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:20px;
+	padding-bottom:0;
+	background-color:whit;
+	
+	}
+#piepagina{
+	border:none;
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:20px;
+	padding-bottom:0;
+	background-color:whit;
+	
+	}
+
+	/*reglas anidadas/esto sirve para que lo seleccionado tenga diferencia y sea unica a las demas/*/
+	#piepagina a{
+		text-decoration:underline;
+	}
+	ol li{list-style:armenian}
+	ol ul li{list-style:disc}
+	
+	/*clases/son las que tienen punto.*/
+	.resaltar{
+
+		/*text-decoration:underline;*/
+		font-style:italic;
+	}
+	/*esto sirve para resaltar alguna palabra o texto*/
+		
+	
+	
